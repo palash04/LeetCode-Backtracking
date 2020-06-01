@@ -5,6 +5,7 @@ public:
         if (k == 1){
             return true;
         }
+        if (curr > target) return false;
         if (curr == target){
             return solve(nums,0,used,k-1,0,target);
         }
